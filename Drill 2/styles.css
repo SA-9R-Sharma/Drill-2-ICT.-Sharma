@@ -1,0 +1,67 @@
+:root {
+  --obmc-blue: #003366;
+  --obmc-dark-blue: #002244;
+  --obmc-gold: #c5931d;
+  --obmc-gold-hover: #d99b0e;
+}
+
+body {
+  display: flex;
+  flex-direction: column;
+  min-height: 100vh;
+  background-color: #f4f6f9;
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+.obmc-navbar {
+  background-color: var(--obmc-blue);
+  border-bottom: 4px solid var(--obmc-gold);
+}
+
+.navbar-nav .nav-link {
+  color: rgba(255, 255, 255, 0.85);
+  font-weight: 500;
+  margin: 0 5px;
+  
+}
+
+.navbar-nav .nav-link:hover,
+.navbar-nav .nav-link.active {
+  color: var(--obmc-gold); 
+  transform: translateY(-1px);
+}
+
+.btn-obmc-gold {
+  background-color: var(--obmc-gold);
+  color: var(--obmc-dark-blue);
+  border: none;
+}
+
+.btn-obmc-gold:hover {
+  background-color: var(--obmc-gold-hover);
+  color: #000;
+}
+
+.hero-section {
+  background: linear-gradient(135deg, var(--obmc-blue), var(--obmc-dark-blue));
+  color: #ffffff; 
+  border-bottom: 4px solid var(--obmc-gold);
+}
+
+.text-obmc-blue {
+  color: var(--obmc-blue);
+}
+
+.obmc-card {
+  border-top: 4px solid var(--obmc-blue); /* Added missing semicolon */
+  transition: transform 0.2s ease;
+}
+
+.obmc-card:hover {
+  transform: translateY(-5px);
+}
+
+.obmc-footer {
+  background-color: var(--obmc-dark-blue);
+  color: #ffffff; 
+}
